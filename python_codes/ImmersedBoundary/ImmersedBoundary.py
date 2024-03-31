@@ -273,7 +273,7 @@ def classify_inside_outside(first_cut_indices):
     inside_cell_indices = []
     outside_cell_indices = []
     num_common = 0
-    print 'Length of first cut indices ', len(first_cut_indices)
+    print ("Length of first cut indices"), len(first_cut_indices)
 
     for ind in first_cut_indices:
         cell_dict = {}
@@ -337,7 +337,7 @@ def classify_inside_outside(first_cut_indices):
         else:
             outside_cell_indices.append(cell_dict)
     
-    print 'Num common ', num_common
+    print ('Num common '), num_common
     return(inside_cell_indices, outside_cell_indices)
 
 

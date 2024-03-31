@@ -98,7 +98,7 @@ class TwoDGrid(object):
 
     def set_boundary(self, boundary):
         if type(boundary) is not Boundary:
-            print 'Invalid boundary passed. Exiting...'
+            print ('Invalid boundary passed. Exiting...')
             return
 
         # In python a[0:n] returns an array from a[0] to a[n-1]

@@ -185,8 +185,8 @@ def fit_line_old(start, end, I, stretching_f=lambda xi: xi):
 
     for xi in range(I+1):
         s = stretching_f(xi/I)
-        print start['x']
-        print xi
+        print (start['x'])
+        print (xi)
         x = ((1 - s) * start['x']) + (s * end['x'])
         y = ((1 - s) * start['y']) + (s * end['y'])
         r[xi] = Point(x, y)
